@@ -27,13 +27,13 @@ void bubble_sort(int *array, size_t size)
 				array[j] = array[j + 1];
 				array[j + 1] = temp;
 
-				print_array(array, size);  // Print after each swap
+				print_array(array, size);  /* Print after each swap */
 				swapped = 1;
 			}
 		}
 
 		if (!swapped)
-			break; // Optimization: exit early if no swaps occurred
+			break;
 	}
 }
 
